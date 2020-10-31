@@ -11,9 +11,8 @@ class SignUp{
 	}
 	display(){
 		
-		if(gameState === 0){
-			
-			
+		
+		if(signUp_clcik){	
 		//set position for form elements		
 			this.name.position(displayWidth/2 - 40 , displayHeight/2 - 80);
 	      	this.username.position(displayWidth/2 - 40, displayHeight/2 - 40);
@@ -55,6 +54,8 @@ class SignUp{
 				      	player.update(); //updating player data in database
 				      	player.updateCount(playerCount); //update player count
 
+						form = new Form();
+						form.display();
 				      	
 				      	
 
